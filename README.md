@@ -1,2 +1,2 @@
 # vikings
-Making a text based game based on vikings lore.
+Making a text based game based on vikings. First project coding
