@@ -74,9 +74,8 @@ class ChoiceSelector(Scene):
             return 'blacksmith'
 
         elif choice == "Blacksmith" and "Blacksmith" in places_inventory:
-            print "There's nothing left to do there. You've got other matters"
-            print "to attend to."
-            return 'choice_selector'
+            print "You head back to the Blacksmith."
+            return 'blacksmith_craft'
 
         elif choice == "Blacksmith":
             return 'blacksmith'
@@ -119,7 +118,7 @@ class Keep(Scene):
     def enter(self):
         print "You're Filip Halstensson, you are the son of famed Gotaland"
         print "king, King Halsten. However trouble is brewing here."
-        print "You're uncle has always shown disgust that you're father"
+        print "Your uncle has always shown disgust that your father"
         print "was king and not himself. He has always been very vocal"
         print "in his protests. However you never thought your uncle would"
         print "go so far. As you headed into the Keep, you could sense a"
@@ -591,7 +590,7 @@ class Shipwreck2(Scene):
 
     def enter(self):
         print "You find your way back to the boat in hopes of opening the chest."
-        if 'Knife' in weapon_inventory or "Crowbar" in weapon_inventory:
+        if 'Knife' in weapon_inventory or "Crowbar" in weapon_inventory or "Superior Knife" in weapon_inventory:
             print "You must have something that you could use to try to pry the"
             print "lid open. You give it all you've got but there wasn't"
             print "so much as a budge."
@@ -772,7 +771,7 @@ class GreatSwordEnding(Scene):
         print "Your uncle draws his axe. You draw your Great Sword."
         print "You ready the sword in your palms as your uncle begins to move"
         print "towards you. He winds up an overhead attack with his axe."
-        print "You you swing upwards deflecting his axe off to the side."
+        print "You swing upwards deflecting his axe off to the side."
         print "You take this opportunity to quickly strike in the opposite"
         print "direction, catching him on the shoulder. He winces and lunges"
         print "backwards. Anger envelops you as you think about your father"
